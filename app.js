@@ -3,6 +3,7 @@ const axios = require("axios");
 const app = express();
 const cors = require("cors");
 const { mercadopago } = require("./mercadopago");
+
 app.use(cors());
 app.use(express.json());
 

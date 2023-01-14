@@ -14,21 +14,22 @@ app.post("/mercadopago", async (req, res) => {
         title: req.body.title,
         unit_price: req.body.price,
         quantity: 1,
-        description: req.body.description
-      }
+        description: req.body.description,
+      },
     ],
     back_urls: {
       success: "https://club-del-escape-new-front.vercel.app/success",
       pending: "https://club-del-escape-new-front.vercel.app/pending",
-      failure: "https://club-del-escape-new-front.vercel.app/failure"
+      failure: "https://club-del-escape-new-front.vercel.app/failure",
     },
     payment_methods: {
       excluded_payment_types: [
         {
           id: "ticket",
-        }
-      ]
-    }
+        },
+      ],
+    },
+    auto_return: "approved",
   };
 
   mercadopago.preferences

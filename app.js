@@ -17,9 +17,9 @@ app.post("/mercadopago", async (req, res) => {
       }
     ],
     back_urls: {
-      success: "http://localhost:3000/success",
-      pending: "http://localhost:3000/pending",
-      failure: "http://localhost:3000/failure"
+      success: "https://club-del-escape-new-front.vercel.app/success",
+      pending: "https://club-del-escape-new-front.vercel.app/pending",
+      failure: "https://club-del-escape-new-front.vercel.app/failure"
     },
     payment_methods: {
       excluded_payment_types: [
